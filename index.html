@@ -45,6 +45,7 @@
 
 <body>
 
+  <!-- non logged-in header -->
   <header class="header-container">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg">
@@ -65,35 +66,14 @@
               <div class="dropdown-content">
                 <a href="https://www.nexarc.in/tender-and-quotations/">Tender & quotations</a>
                 <a href="https://www.nexarc.in/business/">Businesses</a>
-                <a href="#">Get Tata Verified</a>
               </div>
             </li>
             <li class="dropdown">
-              <div class="dropbtn">Get Solutions
+              <div class="dropbtn">Get Software
                 <img class="dropdown-icon" src="./img/chevron-down.svg" alt="icon" width="12" height="12" />
               </div>
               <div class="dropdown-content">
                 <a href="https://www.nexarc.in/product-services/">Apps & Solutions</a>
-                <a href="#">Manage services</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <div class="dropbtn">Get Financing
-                <img class="dropdown-icon" src="./img/chevron-down.svg" alt="icon" width="12" height="12" />
-              </div>
-              <div class="dropdown-content">
-                <a href="#">Credit Cards</a>
-                <a href="#">Business Loans</a>
-                <a href="#">Bill Discounting</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <div class="dropbtn">Find Experts
-                <img class="dropdown-icon" src="./img/chevron-down.svg" alt="icon" width="12" height="12" />
-              </div>
-              <div class="dropdown-content">
-                <a href="#">nexTalks</a>
-                <a href="#">nexConsult</a>
               </div>
             </li>
             <li class="dropdown">
@@ -110,6 +90,7 @@
               </div>
               <div class="dropdown-content">
                 <a href="https://www.nexarc.in/insights/">Info Hub</a>
+                <a href="#">nexTalks</a>
               </div>
             </li>
           </ul>
@@ -120,11 +101,166 @@
           </div>
 
         </div>
-        <div class="search-main-box">
-          <div class="search-box" id="toggle-search" onclick="toogleSearch()">
+        <div class="search-main-box" id="toggle-search" onclick="toogleSearch()">
+          <div class="search-box">
             <img class="search-icon" src="img/icon-search-dark.svg" alt="search icon" width="14" height="14" />
           </div>
-          <input class="search-input" type="text" />
+        </div>
+
+        <div class="search-content-box" id="search-content-box">
+          <input class="search-input" type="text" placeholder="Type here to search" />
+          <div class="search-content">
+            <h3 class="search-title">You might be interested in</h3>
+            <div class="column-content">
+              <div class="left-column">
+                <a class="search-item" href="#">
+                  <div class="title">Businesses</div>
+                  <div class="label">Explore More</div>
+                </a>
+                <a class="search-item" href="#">
+                  <div class="title">Applications & Solutions</div>
+                  <div class="label">Explore More</div>
+                </a>
+                <a class="search-item" href="#">
+                  <div class="title">Advisors</div>
+                  <div class="label">Explore More</div>
+                </a>
+                <a class="search-item" href="#">
+                  <div class="title">nexTalks</div>
+                  <div class="label">Explore More</div>
+                </a>
+                <a class="search-item" href="#">
+                  <div class="title">Insights</div>
+                  <div class="label">Explore More</div>
+                </a>
+                <a class="search-item" href="https://www.nexarc.in/tenders-quotations-list/">
+                  <div class="title">Tenders & Quotations</div>
+                  <div class="label">Explore More</div>
+                </a>
+                <a class="search-item" href="#">
+                  <div class="title">Courses</div>
+                  <div class="label">Explore More</div>
+                </a>
+              </div>
+              <div class="right-column">
+                <a class="browseAll" href="https://www.nexarc.in/all-list/">Browse All</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- logged-in header -->
+  <header class="header-container">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
+        <a href="/" class="navbar-brand">
+          <img class="logo" src=img/logo-nexarc.svg alt="nexarc logo" width="137" height="33" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="dropdown">
+              <div class="dropbtn">
+                <a href="#">My Account</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <div class="dropbtn">Find Opportunities
+                <img class="dropdown-icon" src="./img/chevron-down.svg" alt="icon" width="12" height="12" />
+              </div>
+              <div class="dropdown-content">
+                <a href="https://www.nexarc.in/tender-and-quotations/">Tender & quotations</a>
+                <a href="https://www.nexarc.in/business/">Businesses</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <div class="dropbtn">Get Software
+                <img class="dropdown-icon" src="./img/chevron-down.svg" alt="icon" width="12" height="12" />
+              </div>
+              <div class="dropdown-content">
+                <a href="https://www.nexarc.in/product-services/">Apps & Solutions</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <div class="dropbtn">Get Skilled
+                <img class="dropdown-icon" src="./img/chevron-down.svg" alt="icon" width="12" height="12" />
+              </div>
+              <div class="dropdown-content">
+                <a href="https://www.nexarc.in/learning/">nexLearn</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <div class="dropbtn">Stay Updated
+                <img class="dropdown-icon" src="./img/chevron-down.svg" alt="icon" width="12" height="12" />
+              </div>
+              <div class="dropdown-content">
+                <a href="https://www.nexarc.in/insights/">Info Hub</a>
+                <a href="#">nexTalks</a>
+              </div>
+            </li>
+          </ul>
+          <div class="nav-right">
+            <button class="btn activities-btn">
+              <img class="activities-icon" src="./img/icon-grid-dark.svg" alt="grid icon" width="18" height="18" />
+            </button>
+            <button class="btn primary profile-btn">JD</button>
+            <img class="logo" src="./img/logo-tata.svg" alt="tata logo" width="32" height="30" />
+          </div>
+
+        </div>
+        <div class="search-main-box loggedin" id="toggle-search-new" onclick="toggleSearchNew()">
+          <div class="search-box">
+            <img class="search-icon" src="img/icon-search-dark.svg" alt="search icon" width="14" height="14" />
+          </div>
+        </div>
+        <div class="search-content-box" id="search-content-box">
+          <input class="search-input" type="text" placeholder="Type here to search" />
+          <div class="search-content">
+            <h3 class="search-title">You might be interested in</h3>
+            <div class="column-content">
+              <div class="left-column">
+                <a class="search-item" href="#">
+                  <div class="title">Businesses</div>
+                  <div class="label">Explore More</div>
+                </a>
+                <a class="search-item" href="#">
+                  <div class="title">Applications & Solutions</div>
+                  <div class="label">Explore More</div>
+                </a>
+                <a class="search-item" href="#">
+                  <div class="title">Advisors</div>
+                  <div class="label">Explore More</div>
+                </a>
+                <a class="search-item" href="#">
+                  <div class="title">nexTalks</div>
+                  <div class="label">Explore More</div>
+                </a>
+                <a class="search-item" href="#">
+                  <div class="title">Insights</div>
+                  <div class="label">Explore More</div>
+                </a>
+                <a class="search-item" href="https://www.nexarc.in/tenders-quotations-list/">
+                  <div class="title">Tenders & Quotations</div>
+                  <div class="label">Explore More</div>
+                </a>
+                <a class="search-item" href="#">
+                  <div class="title">Courses</div>
+                  <div class="label">Explore More</div>
+                </a>
+              </div>
+              <div class="right-column">
+                <a class="browseAll" href="https://www.nexarc.in/all-list/">Browse All</a>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </div>
@@ -254,8 +390,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     function toogleSearch() {
-      var element = document.getElementById("toggle-search");
+      var element = document.getElementById("search-content-box");
       element.classList.toggle("show");
+    }
+    function toggleSearchNew() {
+      var element1 = document.getElementById("search-content-box");
+      element1.classList.toggle("show");
     }
   </script>
 </body>
