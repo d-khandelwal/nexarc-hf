@@ -79,6 +79,14 @@ a:hover {
   display: inline-block;
   transition: 0.3s all ease-in-out;
 }
+.dropdown.right .dropdown-content {
+  min-width: 135px;
+  max-width: 135px;
+}
+.dropdown.right:hover .dropdown-content {
+  top: 40px;
+  left: 5px;
+}
 .dropdown + .dropdown {
   margin-left: 22px;
 }
@@ -114,8 +122,8 @@ a:hover {
   padding: 10px 0px;
   z-index: 99;
   background: var(--white);
-  min-width: 175px;
-  max-width: 175px;
+  min-width: 190px;
+  max-width: 190px;
   border: 1px solid var(--border-color-secondary);
   box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.14);
   border-radius: 12px;
@@ -177,6 +185,7 @@ a:hover {
   color: var(--white);
   border: 1px solid var(--theme-primary);
   margin: 0px 10px;
+  height: 38px;
 }
 .profile-btn,
 .activities-btn {
@@ -313,12 +322,12 @@ a:hover {
   border-top: 2px solid var(--border-color);
   border-bottom: 2px solid var(--border-color);
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   grid-column-gap: 30px;
 }
 .footer-container .footer-bottom--block {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 30px;
 }
 .footer-container .footer-description {
@@ -390,6 +399,8 @@ a:hover {
   .nav-right .btn {
     width: 100%;
     margin: 20px 0 0 0;
+    height: 38px;
+    display: inline-flex;
   }
   .nav-right .logo {
     margin: 20px 0 0 0;
@@ -454,8 +465,27 @@ a:hover {
   .collapse:not(.show) {
     display: block;
   }
-  .search-main-box {
+  .dropdown.right {
+    width: 100%;
+  }
+  .dropdown.right:hover .dropdown-content {
+    top: 0;
+  }
+  .search-main-box,
+  .search-main-box.loggedin {
     right: 50px;
+  }
+  .search-content-box .search-content {
+    padding: 30px;
+  }
+  .search-content-box .search-item {
+    margin: 0 30px 10px 0px;
+  }
+  .footer-container .footer-top--block {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-container .footer-top--block .footer-route-box:nth-child(3) {
+    margin-top: 30px;
   }
   .footer-container .footer-bottom--block {
     grid-template-columns: 1fr 1fr 1fr;
@@ -494,6 +524,8 @@ a:hover {
   .nav-right .btn {
     width: 100%;
     margin: 20px 0 0 0;
+    height: 38px;
+    display: inline-flex;
   }
   .nav-right .logo {
     margin: 20px 0 0 0;
@@ -561,8 +593,17 @@ a:hover {
   .header-container .navbar-brand {
     margin-right: 0;
   }
+  .dropdown.right {
+    width: 100%;
+  }
+  .dropdown.right:hover .dropdown-content {
+    top: 0;
+  }
   .search-content-box .search-content {
     padding: 20px;
+  }
+  .search-content-box .search-item {
+    margin: 0px 0px 10px 0px;
   }
   .search-content-box .column-content {
     display: block;
@@ -574,9 +615,11 @@ a:hover {
   .search-content-box .right-column {
     margin-top: 20px;
   }
-  .search-main-box {
+  .search-main-box,
+  .search-main-box.loggedin {
     right: 50px;
   }
+
   .footer-container .footer-top--block {
     display: block;
   }
